@@ -11,4 +11,8 @@
   155  kubectl get svc
   156  kubectl expose pod my-first-pod --type=NodePort --port=80 --name=myservice
   157  kubectl get svc
+   168  kubectl exec -it my-first-pod -- /bin/bash
+  171  kubectl exec -it my-first-pod -- ls
+  172  kubectl exec -it my-first-pod -- env
+  173  kubectl exec -it my-first-pod -- cat /usr/share/nginx/html/index.html
 
