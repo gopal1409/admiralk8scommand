@@ -1,0 +1,6 @@
+146  kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
+  147  kubectl get pod
+  148  kubectl get pod -o wide
+  149  kubectl describe pod my-first-pod
+  150  kubectl delete my-first-pod
+  151  kubectl delete pod my-first-pod
