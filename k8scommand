@@ -4,3 +4,11 @@
   149  kubectl describe pod my-first-pod
   150  kubectl delete my-first-pod
   151  kubectl delete pod my-first-pod
+  
+  How to expose the pod outside k8s cluster
+  153   kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
+  154  kubectl get pod
+  155  kubectl get svc
+  156  kubectl expose pod my-first-pod --type=NodePort --port=80 --name=myservice
+  157  kubectl get svc
+
